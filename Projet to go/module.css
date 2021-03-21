@@ -1,0 +1,20 @@
+.is-active:hover {
+	color: #0065FC;
+	/*line-height: 41px;/*decale le texte en dessous*/
+	border-top: solid blue;
+}
+
+.SignUp:hover {
+	color: #FFF;
+	background-color: #0065FC;
+	border-radius: 15px 15px 15px 15px;
+}
+
+input[type="checkbox"] {
+    opacity: 0;
+}
+
+.fa-money-bill-wave:hover, .fa-child:hover, .fa-heart:hover, .fa-dog:hover {
+  background-color: #F3F8FF;
+  transform: scale(1.015);
+}

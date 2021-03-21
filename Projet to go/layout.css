@@ -1,0 +1,23 @@
+body {
+	width: 1366px;
+}
+
+	.l-container {
+	margin: 0 46px;
+}
+
+.slogan {
+	margin: 40px 0 19px 6px;
+}
+
+.recherche {
+	margin-top: 22px;
+}
+
+.results-info {
+	margin-left: 9px;
+}
+.fa-chart-line {
+	position: relative;
+	left: 128px;
+}
