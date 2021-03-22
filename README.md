@@ -16,7 +16,7 @@ Version Mobile:
 
 ## Cahier des charges
 - L'integration doit se faire en HTML5 & CSS3, sans framework (bootstrap par exemple)
-- Le champ de recherche doit être un champ de saisie, dont le texte peut être édité. La fonctionnalité de recherche ne doit pas être implémenté pour autant.
+- Le champ de recherche doit être un champ de saisie, dont le texte peut être édité. La fonctionnalité de recherche n'est encore pas fonctionnel.
 - Chaque carte d’hébergement ou d’activité devra être cliquable dans son intégralité. Pour l’instant les liens seront vides.
 - Les filtres, bien que non fonctionnels, doivent changer de style au survol.
 - Dans le menu, les liens “Hébergements” et “Activités” sont des ancres qui doivent mener aux sections de la page.
