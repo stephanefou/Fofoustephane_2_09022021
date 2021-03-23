@@ -1,0 +1,86 @@
+/*----------------------------------------------------------*\
+  ZONE DE RECHERCHE
+\*----------------------------------------------------------*/
+.search-zone {
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  margin-left: 4px;
+}
+
+.fa-map-marker-alt {/*en enlevant le fas qui précède ça marche...*/
+  color: ; /*annuler le bleu défini dans les filtres plus bas*/
+  background-color: #F2F2F2;
+  padding: 17px 21px 20px 21px;
+  border-radius: 15px 0 0 15px;
+}
+
+.search-input {
+  width: 222px;
+  border-style: solid;
+  padding-left: 16px;
+  border-color: #F2F2F2;
+  border-radius: 0px;
+}
+
+::placeholder { /*pseudo élément*/
+  font-size: 1.2em;
+  font-weight: 700;
+  color: black;
+}
+
+.search-zone button {
+  font-size: 1.1em;
+  font-weight: 400;
+  color: #FFFF;
+  background-color: #0065FC;
+  text-decoration: none; /*supprime le soulignage du lien*/
+  padding: 12px 17px 17px 17px;
+  border-radius: 0 15px 15px 0;
+  border-style: none;
+  cursor: pointer;
+}
+
+
+/*----------------------------------------------------------*\
+  FILTRES
+\*----------------------------------------------------------*/
+.filtres {
+  display: flex;
+  justify-content: flex-start;
+  align-items: baseline;
+  margin: 29px 0 0 12px;
+  max-width: 85%;
+}
+
+.filtres-title {
+  font-size: 1.3em;
+  font-weight: 700;
+  padding-right: 18px;
+  margin: 0;
+  /*display: flex inline-block; /*Si tu enlèves...*/
+}
+
+.filtres-option-label {
+  display: flex inline-block;
+  font-weight: 600;
+  padding-left: 60px;
+  padding-right: 22px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  border-style: solid;
+  border-color: #F2F2F2;
+  border-radius: 30px;
+  position: relative;
+  left: -56px;
+}
+
+.fa-money-bill-wave, .fa-child, .fa-heart, .fa-dog {
+  width: 17px;
+  color: #0065FC;
+  background-color: #F2F2F2;
+  padding: 18px; /*c'est pas plutôt 20 car il y'a une separation entre chaque élément*/
+  border-radius: 30px;
+  /*position: relative;
+  left: 58px;*/
+}
