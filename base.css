@@ -1,0 +1,99 @@
+/*-********************************************************-*\
+	FONT
+\*----------------------------------------------------------*/
+@font-face {
+font-family: 'raleway';
+src: url('fonts/Raleway/Raleway-VariableFont_wght.ttf') format('truetype'),
+	 url('fonts/Raleway/static/Raleway-Medium.ttf') format('truetype'),
+     url('fonts/Raleway/static/Raleway-Bold.ttf') format('truetype'),
+     url('fonts/Raleway/static/Raleway-SemiBold.ttf') format('truetype'),
+     url('fonts/Raleway/static/Raleway-ExtraBold.ttf') format('truetype');/*ou sont weight 700-900 et les autres extension eot, svg, etc...*/
+}
+
+/*----------------------------------------------------------*\
+	Titles
+\*----------------------------------------------------------*/
+h1 {
+	font-size: 1.5em;
+	font-weight: 700;/*Vérifier le font s'il va jusque là!*/
+  margin-bottom: 0;
+}
+
+h1 + p {
+  font-size: 1.13em;
+  margin: 14px 0 0 0;
+}
+
+.results h2 {
+  margin: 0 0 25px 0; /*6.5 en plus du 14.5 des articles, on atteint les 21 de margin-bottom nécessaire*/
+}
+
+#activities {
+  margin: 59px 0 47px 0;
+}
+
+#activities h2 {
+  margin: 0 0 26px 0;
+}
+
+footer h2 {
+  font-size: 1.35em;
+  font-weight: 700;
+  margin: 44px 0 26px 0;
+}
+
+h3 {
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+html {/*----------*/
+  display: flex;
+  justify-content: center;
+}
+
+/*----------------------------------------------------------*\
+	Corps de page
+\*----------------------------------------------------------*/
+body {
+	font-size: 0.875em; /*sur tes mesures slogan ligne 2 fait 12px ici 14 px se rapproche de la maquette initiale en alignant presque verticalement le n de plein et le v de trouvez */
+	font-family: raleway, sans-serif;
+	color:#000000;
+}
+
+main {
+  margin: 0 auto;
+}
+
+/*main > * {
+  padding: 0 20px;
+}*/
+/*----------------------------------------------------------*\
+	Éléments
+\*----------------------------------------------------------*/
+
+nav ul {
+	list-style-type: none; /*oui ne marche pas dans .menu de header.css*/
+}
+
+
+a {/*couleur héritée et suppression sous-lignage lien*/
+	color: inherit;
+	text-decoration: none;
+}
+
+a:visited {
+  color: inherit;
+}
+
+/*img {
+  width: 100%;
+}*/
+
+i {
+  color: #0065FC;
+}
+
+i.inactive {
+  color: #F2F2F2;
+}
