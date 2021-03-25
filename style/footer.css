@@ -1,0 +1,42 @@
+/*----------------------------------------------------------*\
+  Footer
+\*----------------------------------------------------------*/
+footer {
+  background-color: #F2F2F2;
+  padding: 0 47px;
+  height: 206px;
+}
+
+footer nav {
+  display: flex;
+  justify-content: flex-start;
+  align-items: baseline;
+}
+
+footer nav section {
+  width: 33.33%;
+}
+
+footer ul {
+  margin-left: 0;
+  padding-left: 0;
+  line-height: 2em;
+}
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 860px) {
+  footer {
+    padding: 25px 20px;
+    height: auto;
+  }
+
+  footer nav {
+    flex-direction: column;
+  }
+
+  footer nav section {
+    margin: 25px 0;
+    width: 100%;
+  }
+}
