@@ -85,8 +85,13 @@
   /*height: 442px; A ne pas mettre bizarrement*/
 }
 
+/*ici bas  article à 100% c'est img qui prend toute la place il faut après définir la hauteur de img avec la classe results-activities-photo pour laisser apparaître h3*/
 .mini-container-1 article {
   height: 100%;
+}
+
+.mini-container-1 article .results-activities-photo {
+  height: 369px;
 }
 
 .mini-container-2 {
@@ -99,12 +104,24 @@
    height: 53.08%;
 }
 
+.mini-container-2 .article-big .results-activities-photo {
+  height: 170px;
+}
+
 .mini-container-2 .article-small {
    height: 36.97%;
 }
 
+.mini-container-2 .article-small .results-activities-photo {
+  height: 104px;
+}
+
 .mini-container-3 article { 
   height: 100%;
+}
+
+.mini-container-3 article .results-activities-photo {
+  height: 369px;
 }
 
 .mini-container-4 {
@@ -117,8 +134,16 @@
    height: 43.84%;
 }
 
+.mini-container-4 .article-small .results-activities-photo {
+  height: 132px;
+}
+
 .mini-container-4 .article-big {
    height: 46.92%;
+}
+
+.mini-container-4 .article-big .results-activities-photo {
+  height: 144px;
 }
 
 /*----------------------------------------------------------*\
@@ -129,13 +154,13 @@
       flex-direction: column;
     }
 
-     .results section.results-main {
+     .results-main {
       order: 2;
       background-color: unset;
       width: 100%
     }
 
-    .results section.results-popular {
+    .results-popular {
       order: 1;
       flex-direction: row;
       width: 100%;
@@ -145,7 +170,7 @@
       padding-left: 500px;
     }
 
-    .results section.results-activities {
+    .results-activities {
       order: 3;
     }
   }
@@ -162,17 +187,13 @@
     padding: 0 18px;
   }
 
-  .results section.results-main {
-    order: 2;
-    background-color: unset;
-  }
+  .results-activities .articles-container {
+      display: flex;
+      flex-direction: column;
+      height: 1000px;
+    }
 
-  .results section.results-popular {
-    order: 1;
-    display: flex;
-    height: auto;
-  }
-
-  .results section.results-activities {
-    order: 3;
+    .results section.results-activities article {
+      height: 211px;
+    }
   }

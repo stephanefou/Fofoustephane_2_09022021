@@ -74,7 +74,7 @@
 \*----------------------------------------------------------*/
 .results-activities .articles-container .mini-container-1,
 .mini-container-2, .mini-container-3,.mini-container-4 {/*pourquoi 'mini-container-*'ne marche pas*/
-  max-width: 22.60%;
+  width: 22.60%;
 }
 
 .results-activities article {
