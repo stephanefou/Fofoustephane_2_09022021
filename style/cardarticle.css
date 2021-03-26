@@ -72,12 +72,12 @@
 /*----------------------------------------------------------*\
   ACTIVITÉS
 \*----------------------------------------------------------*/
-.results-activities .articles-container .mini-container-* {
-  width: 22.60%;
+.results-activities .articles-container .mini-container-1,
+.mini-container-2, .mini-container-3,.mini-container-4 {/*pourquoi 'mini-container-*'ne marche pas*/
+  max-width: 22.60%;
 }
 
 .results-activities article {
-  /*height: 422px; /* ne met surtout pas de height*/
   border-radius: 20px 20px;
   background-color: white;
   border: none;
@@ -89,6 +89,7 @@
 .results-activities article img {
   width: 100%; /*de la taille de son conteneur*/
   height: 100%;
+  object-fit: cover;
 }
 
 .results-activities article h3 {
