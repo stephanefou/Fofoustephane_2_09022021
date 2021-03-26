@@ -86,23 +86,39 @@
 }
 
 .mini-container-1 article {
+  height: 100%;
 }
 
 .mini-container-2 {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin: 0 14.5px 0 29px; 
+}
+
+.mini-container-2 .article-big {
+   height: 53.08%;
+}
+
+.mini-container-2 .article-small {
+   height: 36.97%;
 }
 
 .mini-container-3 article { 
-  margin: 0 29px 0 14.5px; */
+  height: 100%;
 }
 
 .mini-container-4 {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+.mini-container-4 .article-small {
+   height: 43.84%;
+}
+
+.mini-container-4 .article-big {
+   height: 46.92%;
 }
 
 /*----------------------------------------------------------*\

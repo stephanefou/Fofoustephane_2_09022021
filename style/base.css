@@ -4,7 +4,7 @@
 @font-face {
 font-family: 'raleway';
 src: url('fonts/Raleway/Raleway-VariableFont_wght.ttf') format('truetype'),
-	 url('fonts/Raleway/static/Raleway-Medium.ttf') format('truetype'),
+	   url('fonts/Raleway/static/Raleway-Medium.ttf') format('truetype'),
      url('fonts/Raleway/static/Raleway-Bold.ttf') format('truetype'),
      url('fonts/Raleway/static/Raleway-SemiBold.ttf') format('truetype'),
      url('fonts/Raleway/static/Raleway-ExtraBold.ttf') format('truetype');/*ou sont weight 700-900 et les autres extension eot, svg, etc...*/
