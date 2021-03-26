@@ -11,7 +11,7 @@
 
 .results {
   display: flex;
-  justify-content: space-between;
+  /*justify-content: space-between;*/
 }
 
 /*----------------------------------------------------------*\
@@ -19,16 +19,15 @@
 \*----------------------------------------------------------*/
 .results-main {
   display: flex;
-  justify-content: space-between;
   flex-direction: column;
   width: 59.76%;
-  height: 505px;
-  padding: 44px 38px;
+  /*height: 505px;*/
+  padding: 44px 38px 4px 38px;
   margin-right: 38px;
 }
 
 .results-main-afficherplus {
-  flex: 1; /*display et hustify ou align sel ou text align ou inline flex/bloc rien n'a marché mais ça oui. Tu dois qd mm mettre un padding gauche car ne respecte pas le parent*/
+  /*flex: 1; display et hustify ou align sel ou text align ou inline flex/bloc rien n'a marché mais ça oui. Tu dois qd mm mettre un padding gauche car ne respecte pas le parent*/
   font-weight: bold;
   margin: 12px 0 0 0; /*40-14.5*/
   padding-left: 4px;
@@ -44,8 +43,8 @@
 \*----------------------------------------------------------*/
 .results-popular {
   width: 25.35%;
-  height: 505px;
-  padding: 44px 38px;
+  /*height: 505px;*/
+  padding: 44px 38px 4px 38px;
 }
 
 .results aside.results-popular i{
@@ -109,6 +108,33 @@
 /*----------------------------------------------------------*\
 	RESPONSIVE
 \*----------------------------------------------------------*/
+  @media screen and (max-width: 1377px) {
+    .results {
+      flex-direction: column;
+    }
+
+     .results section.results-main {
+      order: 2;
+      background-color: unset;
+      width: 100%
+    }
+
+    .results section.results-popular {
+      order: 1;
+      flex-direction: row;
+      width: 100%;
+    }
+
+    .fa-chart-line {
+      padding-left: 500px;
+    }
+
+    .results section.results-activities {
+      order: 3;
+    }
+  }
+
+
   @media screen and (max-width: 1090px) {
   .results {
     flex-direction: column;
