@@ -1,10 +1,11 @@
 body {
 	width: 1366px;
-	margin: 0; /*évite le margin de body dans microsoft edge*/
+	margin: 0 auto; /*évite le margin de body dans microsoft edge*/
+	padding-left: 91px; /*car le body est coupé à gauche dans la version mobile*/
 }
 
-	.l-container {
-		padding: 0 18px;
+.l-container {
+	padding: 0 18px;
 	margin: 0 28px;
 }
 
