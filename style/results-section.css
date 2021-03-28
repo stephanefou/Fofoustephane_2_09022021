@@ -209,19 +209,19 @@
   @media screen and (max-width: 1210px) {
     .results {
       flex-direction: column;
-      max-width: 1100.8px;
     }
 
      .results-main {
       order: 2;
       background-color: unset;
-      width: 100%
+      width: auto;
+      margin: 0;/*celui que tu as mis pour que l'ecart avec results popular soit contant en responsive à results-section.css:20*/
     }
 
     .results-popular {
       order: 1;
       flex-direction: row;
-      width: 100%;
+      width: auto;
       margin-bottom: 30px;
       padding-bottom: 36px;
     }
@@ -231,7 +231,7 @@
     }
 
     .results-popular .articles-container article {
-      width: 30.5%;
+      width: 29.5%;
     }
 
     .results-activities {
@@ -268,7 +268,6 @@
     .mini-container-4 .results-activities-photo {
       min-height: 369px; /*height normal ne marche pas parce que déjà utilisé pour cet élément?*/
     }
-
   }
 
  @media screen and (max-width: 1144px) {
@@ -280,10 +279,9 @@
     .results-popular .articles-container article {
       min-width: 44.5%;
     }
-
   }
 
-  @media screen and (max-width: 740px) {
+  @media screen and (max-width: 788px) {
 
     .results-popular {
       margin-bottom: 0px;
@@ -294,7 +292,7 @@
     }
 
     .results-popular .articles-container article {
-      min-width: 100%;
+      width: 100%; /*si tu mets min-width=100% il depassera du div parent car tu le minimum n'est pas inclus*/
     }
 
     .results section.results-section-background {
@@ -302,9 +300,19 @@
     }
 
     .results-main article {
-      min-width: 100%;
+      min-width: 97.2%; /*ici width ne marche pas et si tu mets min-width=100% il depassera du div parent car tu le minimum n'est pas inclus*/
     }
 
+  }
+
+  @media screen and (max-width: 570px) {
+    footer {
+      margin: 0 46px;
+    }
+
+    .results-popular {
+      border-radius: 3px;
+    }
   }
 
  /* @media screen and (max-width: 1090px) {
