@@ -88,7 +88,9 @@
 .results-activities .articles-container {
   display: flex;
   justify-content: space-between;
-  align-items: stretch;
+  align-items: stretch;/*utilité*/
+  column-gap: 41px;
+  grid-row-gap: 41px;
   /*height: 442px; A ne pas mettre bizarrement*/
 }
 
@@ -170,32 +172,44 @@
       height: 625px;
     }
 
+    .results-popular .results-card-popular-photo {
+      height: 169.75px;
+    }
+
     /*.results-popular article {
       height: 178.6px;
     } Ne marche pas quand height fixe en 'px' dans card-article.css:40*/
 
     .results-activities {
-      height: 1200px;
+      padding: 0 44px;
+      height: 2770px;/*Pourquoi auto ne marche pas car footer se met en plein milieu*/
     }
 
     .results-activities .articles-container >* {
-          flex: 0 5 30.88%;
-          column-gap: 50px;
-      }
+          flex: 0.5 0 41.88%;
+    }
+
+    /*.mini-container-4 article{
+      width: 50%;
+    }
 
     /*.mini-container-1, .mini-container-2, .mini-container-3 , .mini-container-4 {
       min-width: 30.88%;
     }*/
-    .mini-container-4 {
-      flex-direction: row;
-    }
 
+    /*.mini-container-4 {
+      flex-direction: row;
+      column-gap: 41px;
+      /*min-width: 60.76%;
+      flex: 0.3 1 50%;
+    }*/
+   
   }
 
-
-  @media screen and (max-width: 1210px) {/*1161*/
+  @media screen and (max-width: 1210px) {
     .results {
       flex-direction: column;
+      max-width: 1100.8px;
     }
 
      .results-main {
@@ -223,9 +237,41 @@
     .results-activities {
       order: 3;
     }
+
+     .results-activities .articles-container >* {
+      flex: 0 0 100%;
+      height: 100% /*la photo ne bouffe pas la description*/
+    }
+
+    .results-activities .articles-container .mini-container-2 {
+      height: auto; /*ne pas fixer à 844 (double du div m^me portée*/
+      grid-row-gap: 41px;
+    }
+
+    .results-activities .articles-container .mini-container-2 article {
+      height: 50%;
+    }
+
+    .mini-container-2 .results-activities-photo {
+      min-height: 369px; /*height normal ne marche pas parce que déjà utilisé pour cet élément?*/
+    }
+
+     .results-activities .articles-container .mini-container-4 {
+      height: auto;
+      grid-row-gap: 41px;
+    }
+
+    .results-activities .articles-container .mini-container-4 article {
+      height: 50%;
+    }
+
+    .mini-container-4 .results-activities-photo {
+      min-height: 369px; /*height normal ne marche pas parce que déjà utilisé pour cet élément?*/
+    }
+
   }
 
- @media screen and (max-width: 1143px) {
+ @media screen and (max-width: 1144px) {
 
     .results-popular .articles-container {
       height: auto;
