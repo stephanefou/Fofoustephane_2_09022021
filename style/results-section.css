@@ -306,12 +306,25 @@
   }
 
   @media screen and (max-width: 570px) {
+    .l-container {
+      padding-right: 0;
+      margin-right:0;
+    }
+
     footer {
       margin: 0 46px;
     }
 
     .results-popular {
       border-radius: unset;
+    }
+  }
+
+  @media screen and (max-width: 460px) {
+  
+
+    body {
+      max-width: 460px;
     }
   }
 
@@ -341,4 +354,4 @@
     .results-popular article {
       width: 42.95%;
     }
-  }
+  }*/

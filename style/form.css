@@ -69,8 +69,8 @@
   margin: 16px 24px 16px 0px;
 }
 
-label {
-  display: inline-block;/*label est une balise inline, ici on veut lui faire accepter le (marginxpadding) (top+bottom)*/
+.label {
+  /*display: inline-block;/*label est une balise inline, ici on veut lui faire accepter le (marginxpadding) (top+bottom)*/
   font-weight: 600;
   padding-right: 20px;
   border-style: solid;
@@ -78,6 +78,9 @@ label {
   border-radius: 30px;
   margin: 0 24px 12px 0;
   white-space: nowrap;
+}
+.filtres-options {
+  display: flex;
 }
 
 .filtres-options-label {
