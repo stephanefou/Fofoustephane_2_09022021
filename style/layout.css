@@ -1,5 +1,6 @@
 body {
 	width: 1366px;
+	margin: 0; /*évite le margin de body dans microsoft edge*/
 }
 
 	.l-container {
@@ -19,9 +20,9 @@ body {
 	margin-left: 9px;
 }
 
-.fa-chart-line {
+/*.fa-chart-line {
 	padding-left: 103px;
-}
+} results-section.css:52 est mieux, tu avais aussi penser à position relative mais pas top*/
 
 .results-activities .articles-container {
 	height: 422px;

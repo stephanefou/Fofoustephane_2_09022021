@@ -66,20 +66,18 @@
 .filtres-title {
   font-size: 1.3em;
   font-weight: 700;
-  padding-right: 18px;
   margin: 16px 24px 16px 0px;
 }
 
 label {
+  display: inline-block;/*label est une balise inline, ici on veut lui faire accepter le (marginxpadding) (top+bottom)*/
   font-weight: 600;
   padding-right: 20px;
-  padding-top: 16px;
-  padding-bottom: 16px;
   border-style: solid;
   border-color: #F2F2F2;
   border-radius: 30px;
-  margin: 5px 24px 5px 0;
-  flex-wrap: wrap;
+  margin: 0 24px 12px 0;
+  white-space: nowrap;
 }
 
 .filtres-options-label {
@@ -93,7 +91,6 @@ label {
   background-color: #F3F8FF;
   padding: 20px 20px 20px 20px;
   border-radius: 30px;
-  margin:0 0 12px 0;
   position: relative;
   left: -3px;
 }
