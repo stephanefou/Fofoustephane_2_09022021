@@ -77,10 +77,10 @@
   border-color: #F2F2F2;
   border-radius: 30px;
   margin: 0 24px 12px 0;
-  white-space: nowrap;
 }
 .filtres-options {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .filtres-options-label {
