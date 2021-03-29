@@ -182,7 +182,7 @@
 
     .results-activities {
       padding: 0 44px;
-      height: 2770px;/*Pourquoi auto ne marche pas car footer se met en plein milieu*/
+      height: auto;/*Pourquoi auto ne marche pas car footer se met en plein milieu*/
     }
 
     .results-activities .articles-container >* {
@@ -253,7 +253,7 @@
     }
 
     .mini-container-2 .results-activities-photo {
-      min-height: 369px; /*height normal ne marche pas parce que déjà utilisé pour cet élément?*/
+      min-height: 145px; /*height normal ne marche pas parce que déjà utilisé pour cet élément?*/
     }
 
      .results-activities .articles-container .mini-container-4 {
@@ -266,7 +266,7 @@
     }
 
     .mini-container-4 .results-activities-photo {
-      min-height: 369px; /*height normal ne marche pas parce que déjà utilisé pour cet élément?*/
+      min-height: 145px; /*height normal ne marche pas parce que déjà utilisé pour cet élément?*/
     }
   }
 
@@ -295,6 +295,17 @@
       width: 100%; /*si tu mets min-width=100% il depassera du div parent car tu le minimum n'est pas inclus*/
     }
 
+    .mini-container-1 article .results-activities-photo,
+    .mini-container-2 article .results-activities-photo,
+    .mini-container-3 article .results-activities-photo,
+    .mini-container-4 article .results-activities-photo {
+      height: 145px;
+    }
+
+    .mini-container-2 .article-big .results-activities-photo {
+      height: 145px;
+    }
+
     .results section.results-section-background {
       background-color: unset;
     }
@@ -306,13 +317,9 @@
   }
 
   @media screen and (max-width: 570px) {
-    .l-container {
-      padding-right: 0;
-      margin-right:0;
-    }
 
     footer {
-      margin: 0 46px;
+      width:auto;
     }
 
     .results-popular {
@@ -322,36 +329,4 @@
 
   @media screen and (max-width: 460px) {
   
-
-    body {
-      max-width: 460px;
-    }
   }
-
- /* @media screen and (max-width: 1090px) {
-  .results {
-    flex-direction: column;
-    padding: 0;
-  }
-
-  .l-container {
-    margin: 0 18px;
-    padding: 0 18px;
-  }
-
-  .results-activities .articles-container {
-      display: flex;
-      flex-direction: column;
-      height: 1000px;
-    }
-
-    .results section.results-activities article {
-      height: 211px;
-    }
-  }
-
-  @media screen and (max-width: 1078px) {
-    .results-popular article {
-      width: 42.95%;
-    }
-  }*/
