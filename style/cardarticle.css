@@ -125,3 +125,21 @@
 .fa-star {
   font-size: 11px;
 }
+
+@media screen and (max-width: 1356px) {
+  .results-popular .articles-container article .results-card-description p {
+    margin: 10px 0 65px 0;
+    }
+ }
+
+@media screen and (max-width: 1210px) {
+  .results-popular .articles-container article .results-card-description p {
+    margin: 10px 0 75px 0;
+    }
+}
+
+@media screen and (max-width: 788px) {
+  .results-popular .articles-container article .results-card-description p {
+    margin: 10px 0 90px 0;
+    }
+}
