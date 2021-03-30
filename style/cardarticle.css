@@ -143,3 +143,9 @@
     margin: 10px 0 90px 0;
     }
 }
+
+@media screen and (max-width: 788px) {
+  .results-popular .articles-container article .results-card-description p {
+    margin: 10px 0 75px 0;
+    }
+}
