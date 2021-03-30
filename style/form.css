@@ -102,16 +102,25 @@
   RESPONSIVE
 \*----------------------------------------------------------*/
 @media screen and (max-width: 460px) {
+  .search-zone {
+    padding-left: 12px;
+  }
+  
   .search-input {
     width: 230px;
   }
 
   .search-zone .btn-validation-BigScreen {
   opacity: 0;
-
+  position: relative; /*ne génèrera pas d'espace à droite même caché, il ne doit pas supplomber le e de nature*/
+  left: -80px;
   }
 
   .search-zone .btn-validation-SmallScreen {
   opacity: 1;
+  }
+
+  .label{
+    padding-right: 11px;
   }
 }
