@@ -27,12 +27,12 @@ footer ul {
 
 @media screen and (max-width: 860px) {
   footer {
-    padding: 0 90px;
+    padding: 0 38px;/*90*/
     height: auto;
   }
 
   body {
-    width: 1000px;
+    min-width: 454px;
   }
 
   footer nav {
