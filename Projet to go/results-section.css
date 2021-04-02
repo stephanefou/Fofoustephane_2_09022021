@@ -1,0 +1,140 @@
+/*----------------------------------------------------------*\
+  RESULT-INFO-
+\*----------------------------------------------------------*/
+.fa-info {
+  color: #0065FC;
+  border: 1.5px solid #F2F2F2;
+  border-radius: 30px;
+  padding: 4px 8px 5px 8px;
+  margin-right: 12px;
+}
+
+.results {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+/*----------------------------------------------------------*\
+	MAIN SECTION
+\*----------------------------------------------------------*/
+.results-main {
+  width: 65.75%;
+  height: 593px;
+}
+
+.results-main-afficherplus {
+  flex: 1; /*display et hustify ou align sel ou text align ou inline flex/bloc rien n'a marché mais ça oui. Tu dois qd mm mettre un padding gauche car ne respecte pas le parent*/
+  font-weight: bold;
+  margin: 25.5px 0 0 0; /*40-14.5*/
+  padding-left: 42px;
+}
+
+.results section.results-main-afficherplus:hover,
+.results section.results-main-afficherplus {
+  text-decoration: underline;
+}
+
+/*----------------------------------------------------------*\
+  POPULAR SECTION
+\*----------------------------------------------------------*/
+.results-popular {
+  width: 31.26%;
+  height: 593px;
+}
+
+.results aside.results-popular i{
+  color: black;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+
+.results aside.results-popular h2 i:hover,
+.results aside.results-popular h2:focus-within i {
+  opacity: 0.5;
+}
+
+/*----------------------------------------------------------*\
+	Articles-containers
+\*----------------------------------------------------------*/
+.results-main .articles-container, aside .articles-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;/*760px;*/
+  margin: auto; /*un flex crée un élément plus grand que 760 du coup le navigateur crée un margin à droite*/
+}
+
+.results section.results-section-background, aside.results-section-background {
+  background-color: #F2F2F2;
+  border-radius: 30px;
+}
+
+/*----------------------------------------------------------*\
+  ACTIVITÉS
+\*----------------------------------------------------------*/
+.results-activities {
+  /*background-color: red;*/
+}
+
+.results-activities .articles-container {
+  display: flex;
+  justify-content: space-between;
+  /*height: 442px; A ne pas mettre bizarrement*/
+}
+
+.results-activities .articles-container .mini-container-* {
+  width: 22.60%;
+  height: 100%;
+  justify-content: center;
+}
+
+/*section.results-activities .mini-container-2 {
+  margin: 0 14.5px 0 29px; 
+}
+
+section.results-activities .mini-container-3 {
+  margin: 0 29px 0 14.5px; */
+}
+
+/*section.results-activities article.article--highlighted {
+  grid-row: span 2;
+}*/
+
+
+/*----------------------------------------------------------*\
+	RESPONSIVE
+\*----------------------------------------------------------*/
+/*@media screen and (max-width: 1090px) {
+  .results section.results-section {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .results section.results-section--background-plain {
+    border-radius: unset;
+    min-width: unset;
+  }
+
+  .results section.results__accomodation .articles-container {
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  }
+
+  .results section.results__popular .articles-container {
+    grid-template-rows: repeat(auto-fit, 170px);
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  }
+
+  .results section.results__activities .articles-container {
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-template-rows: unset;
+  }
+
+  .results section.results__activities article {
+    height: 200px;
+  }
+
+  .results section.results__activities article.article--highlighted {
+    grid-row: span 1;
+  }
+}
