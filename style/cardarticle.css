@@ -61,7 +61,7 @@
   margin: 12px 15px 0px 15px;
   display: flex;
   flex-direction: column;
-  height: 116px;
+  height: 100%;
   object-fit: cover;
 }
 
