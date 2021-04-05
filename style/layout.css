@@ -21,14 +21,9 @@ body {
 	margin-left: 9px;
 }
 
-/*.fa-chart-line {
-	padding-left: 103px;
-} results-section.css:52 est mieux, tu avais aussi penser à position relative mais pas top*/
-
-/*.results-activities .articles-container {
-	height: auto;
-}*/
-
+/*
+	RESPONSIVE
+				*/
 @media screen and (max-width: 460px) {
 	.l-container {
 		padding: 0;

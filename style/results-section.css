@@ -1,6 +1,6 @@
-/*----------------------------------------------------------*\
+/*
   RESULT-INFO-
-\*----------------------------------------------------------*/
+              */
 .fa-info {
   color: #0065FC;
   border: 1.5px solid #F2F2F2;
@@ -14,9 +14,9 @@
   /*justify-content: space-between;*/
 }
 
-/*----------------------------------------------------------*\
+/*
 	MAIN SECTION
-\*----------------------------------------------------------*/
+              */
 .results-main {
   display: flex;
   flex-direction: column;
@@ -38,9 +38,9 @@
   text-decoration: underline;
 }
 
-/*----------------------------------------------------------*\
+/*
   POPULAR SECTION
-\*----------------------------------------------------------*/
+                  */
 .results-popular {
   width: 25.35%;
   /*height: 505px;*/
@@ -62,9 +62,9 @@
   opacity: 0.5;
 }
 
-/*----------------------------------------------------------*\
+/*
 	Articles-containers
-\*----------------------------------------------------------*/
+                      */
 .results-main .articles-container, .results-popular .articles-container {
   display: flex;
   justify-content: space-between;
@@ -78,9 +78,9 @@
   border-radius: 30px;
 }
 
-/*----------------------------------------------------------*\
+/*
   ACTIVITÉS
-\*----------------------------------------------------------*/
+            */
 .results-activities {
   /*background-color: red;*/
 }
@@ -155,9 +155,9 @@
   height: 144px;
 }
 
-/*----------------------------------------------------------*\
+/*
 	RESPONSIVE
-\*----------------------------------------------------------*/
+            */
   @media screen and (max-width: 1356px) {
     .articles-container {
       flex-wrap: wrap;
@@ -187,23 +187,7 @@
 
     .results-activities .articles-container >* {
           flex: 0.5 0 41.88%;
-    }
-
-    /*.mini-container-4 article{
-      width: 50%;
-    }
-
-    /*.mini-container-1, .mini-container-2, .mini-container-3 , .mini-container-4 {
-      min-width: 30.88%;
-    }*/
-
-    /*.mini-container-4 {
-      flex-direction: row;
-      column-gap: 41px;
-      /*min-width: 60.76%;
-      flex: 0.3 1 50%;
-    }*/
-   
+    }   
   }
 
   @media screen and (max-width: 1210px) {

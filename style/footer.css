@@ -1,6 +1,6 @@
-/*----------------------------------------------------------*\
+/*
   Footer
-\*----------------------------------------------------------*/
+        */
 footer {
   background-color: #F2F2F2;
   padding: 0 47px;
@@ -23,8 +23,9 @@ footer ul {
   line-height: 2em;
 }
 
-/* RESPONSIVE */
-
+/*
+  RESPONSIVE
+      */
 @media screen and (max-width: 860px) {
   footer {
     padding: 0 44px;/*90*/

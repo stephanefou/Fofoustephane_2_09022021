@@ -1,6 +1,6 @@
-/*-********************************************************-*\
+/*
 	FONT
-\*----------------------------------------------------------*/
+      */
 @font-face {
 font-family: 'raleway';
 src: url('../fonts/Raleway/Raleway-VariableFont_wght.ttf') format('truetype'),
@@ -10,9 +10,9 @@ src: url('../fonts/Raleway/Raleway-VariableFont_wght.ttf') format('truetype'),
      url('../fonts/Raleway/static/Raleway-ExtraBold.ttf') format('truetype');/*ou sont weight 700-900 et les autres extension eot, svg, etc...*/
 }
 
-/*----------------------------------------------------------*\
+/*
 	Titles
-\*----------------------------------------------------------*/
+        */
 h1 {
 	font-size: 1.5em;
 	font-weight: 700;/*Vérifier le font s'il va jusque là!*/
@@ -52,9 +52,9 @@ html {/*----------*/
   justify-content: center;
 }
 
-/*----------------------------------------------------------*\
+/*
 	Corps de page
-\*----------------------------------------------------------*/
+                */
 body {
 	font-size: 0.875em; /*sur tes mesures slogan ligne 2 fait 12px ici 14 px se rapproche de la maquette initiale en alignant presque verticalement le n de plein et le v de trouvez */
 	font-family: raleway, sans-serif;
@@ -65,12 +65,9 @@ main {
   margin: 0 auto;
 }
 
-/*main > * {
-  padding: 0 20px;
-}*/
-/*----------------------------------------------------------*\
+/*
 	Éléments
-\*----------------------------------------------------------*/
+          */
 
 nav ul {
 	list-style-type: none; /*oui ne marche pas dans .menu de header.css*/
@@ -86,10 +83,6 @@ a:visited {
   color: inherit;
 }
 
-/*img {
-  width: 100%;
-}*/
-
 i {
   color: #0065FC;
 }
@@ -98,6 +91,9 @@ i.inactive {
   color: #F2F2F2;
 }
 
+/*
+  RESPONSIVE
+      */
 @media screen and (max-width: 460px) {
   h1 {
     width: 90%;

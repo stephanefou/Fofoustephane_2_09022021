@@ -1,6 +1,6 @@
-/*----------------------------------------------------------*\
+/*
 	HEADER
-\*----------------------------------------------------------*/
+			*/
 header {
     margin: 0 auto;
     height: auto;
@@ -8,9 +8,9 @@ header {
     flex-wrap: wrap;
 }
 
-/*----------------------------------------------------------*\
+/*
   LOGO
-\*----------------------------------------------------------*/
+		*/
 header .logo-container {
     flex-grow: 1;
     padding-left: 2px;
@@ -22,9 +22,9 @@ header .logo-container {
   padding: 42px 0 0 0;
 }
 
-/*----------------------------------------------------------*\
+/*
   MENU
-\*----------------------------------------------------------*/
+		*/
 header nav {
   display: flex;
   justify-content: flex-start;
@@ -41,7 +41,7 @@ header nav ul {
 
 header nav li a {
     padding: 48px 25px; /*defini ainsi la hauteur de tout les élément de nav à cause du aligns-items//De plus padding-top seul ne marche pas pour aligner les éléments de nav, le padding de côté pour que la bordure dépasse en focus*/
-    display: block; /*important pour la propriété précédente fonctionne*/
+    display: block; /*important pour que la propriété précédente fonctionne*/
     /*margin-left: 33px;
   margin-right: 33px;*/
     border-top: 2px solid rgba(245, 245, 245, 0); /*si tu ne le mets pas maintenant (caché en opacité), il décalera de son épaisseur les éléments en dessous*/
@@ -58,9 +58,9 @@ header nav li a:hover, header nav li a:focus {
     color: #0065FC;
 }
 
-/*----------------------------------------------------------*\
+/*
   SIGN UP BTN
-\*----------------------------------------------------------*/
+				*/
 header .SignUp-btn {
     background-color: unset; /*pourquoi il y'a un background sans!???*/
     border: none;
@@ -78,12 +78,12 @@ header .SignUp-btn:hover, header .SignUp-btn:focus {
   color: white;
 }
 
-/*----------------------------------------------------------*\
+/*
 	RESPONSIVE
-\*----------------------------------------------------------*/
+				*/
 @media screen and (max-width: 650px) {
   
-  /*----------------------------------------------------------*/
+ 
     header {
       align-items: center;
       margin-top: 20px;

@@ -1,6 +1,6 @@
-/*----------------------------------------------------------*\
+/*
   MAIN RESULTS CARD
-\*----------------------------------------------------------*/
+                     */
 .results-main .articles-container article {/*espace important entre les 2 premiers éléments*/
   width: 29.38%;/*26.76% tu oubliais d'enlever les bordures*/
   height: 179px; /*tu oubliais d'enlever les bordures*/
@@ -33,9 +33,9 @@
   margin: 7px 0 5px 0;
 }
 
-/*----------------------------------------------------------*\
+/*
   POPULAR RESULTS CARD
-\*----------------------------------------------------------*/
+						*/
 .results-popular .articles-container article {
   height: 25.56%;
   border-radius: 20px;
@@ -69,9 +69,9 @@
   margin: 10px 0 30px 0;
 }
 
-/*----------------------------------------------------------*\
+/*
   ACTIVITÉS
-\*----------------------------------------------------------*/
+			*/
 .results-activities .articles-container .mini-container-1,
 .mini-container-2, .mini-container-3,.mini-container-4 {/*pourquoi 'mini-container-*'ne marche pas*/
   width: 22.60%;
@@ -98,9 +98,9 @@
   padding: 12px 15px 12px 15px;
 }
 
-/*----------------------------------------------------------*\
+/*
   COMMUN PROPRIETIES
-\*----------------------------------------------------------*/
+					*/
 .articles-container article h3 {
   margin-bottom: 0px;
   margin-top: 0px;
@@ -109,7 +109,6 @@
 .articles-container article img {
   object-fit: cover; /*empêche la déformation de limage*/
 }
-
 
 .articles-container article:hover, .articles-container article:focus-within {
   box-shadow: 0px 0px 7px 1px #D2D2D2;
@@ -126,6 +125,9 @@
   font-size: 11px;
 }
 
+/*
+  RESPONSIVE
+			*/
 @media screen and (max-width: 1356px) {
   .results-popular .articles-container article .results-card-description p {
     margin: 10px 0 65px 0;
