@@ -301,6 +301,9 @@
   }
 
   @media screen and (max-width: 570px) {
+  	.results section.results-section-background, aside.results-section-background {
+  		border-radius: 0px;
+  	}
 
     footer {
       width:auto;
